@@ -97,7 +97,7 @@ class Scene {
 
     var modelURL = getOptionsURL().modelurl;
     if (modelURL) this.addModelURL(modelURL);
-    else this.addSphere();
+    else this.addCube();
   }
 
   addModelURL(url) {

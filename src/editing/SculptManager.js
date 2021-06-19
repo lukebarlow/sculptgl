@@ -11,7 +11,7 @@ class SculptManager {
     this._tools = []; // the sculpting tools
 
     // symmetry stuffs
-    this._symmetry = true; // if symmetric sculpting is enabled  
+    this._symmetry = false; // if symmetric sculpting is enabled  
 
     // continuous stuffs
     this._continuous = false; // continuous sculpting

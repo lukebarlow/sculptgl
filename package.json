@@ -24,10 +24,10 @@
     "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "dev": "node_modules/.bin/webpack -w",
-    "release": "node_modules/.bin/webpack --env release",
-    "webad": "node_modules/.bin/webpack --env.webad",
-    "website": "node_modules/.bin/webpack --env.website",
+    "dev": "webpack -w",
+    "release": "webpack --env release",
+    "webad": "webpack --env.webad",
+    "website": "webpack --env.website",
     "buildElectron": "yarn release && rm -rf standalone/app/ && cp -R app/ standalone/ && cp package.json standalone",
     "standalone": "yarn buildElectron && cd standalone && node buildStandalone.js"
   },
